@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dasboard de ventas</title>
+    <link rel="stylesheet" href="/src/css/normalize.css" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/09ac4333eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="nav__items nav__items--cta">Administrador</a>
+          <a href="#" class="nav__items">Tienda</a>
+          <a href="#" class="nav__items">Información</a>
+        </nav>
+        <section class="header__container">
+          <div class="header__texts">
+            <h1 class="header__title">Bienvenido Administrador</h1>
+            <h2 class="header__subtitle">Pepito Iglesias</h2>
+            <a href="#" class="header__cta">Cerrar Sesión</a>
+          </div>
+        </section>
+      </div>
+      <div class="header__wave" style="overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #ffefd5"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <main class="container contenido">
+      <section class="facturas">
+        <div class="facturas__item ingresos">
+          <i class="fas fa-coins"></i>
+          <h3 class="facturas__item--titulo">Ingresos</h3>
+          <div class="facturas__item--valor">$1.000.000</div>
+        </div>
+
+        <div class="facturas__item cantidad__ventas">
+          <i class="fas fa-mug-hot"></i>
+          <h3 class="facturas__item--titulo">V. Totales</h3>
+          <div class="facturas__item--valor">40</div>
+        </div>
+
+        <div class="facturas__item beneficios">
+          <i class="fas fa-piggy-bank"></i>
+          <h3 class="facturas__item--titulo">Beneficios</h3>
+          <div class="facturas__item--valor">$1.000.000</div>
+        </div>
+
+        <div class="facturas__item gastos">
+          <i class="fas fa-shopping-bag"></i>
+          <h3 class="facturas__item--titulo">Gastos</h3>
+          <div class="facturas__item--valor">$1.000.000</div>
+        </div>
+      </section>
+
+      <section class="productos">
+        <div class="productos__vendidos">
+          <div class="productos__vendidos--grafico">
+            <canvas id="productos__vendidos__grafico"></canvas>
+          </div>
+        </div>
+        <div class="productos__destacado">
+          <img
+            src="/src/img/300919-cafe-mas-cafeina.jpg"
+            alt=""
+            class="productos__destacado--img"
+          />
+          <div class="productos__destacado--texto">
+            <h2 class="productos__destacado--titulo">Café Mayor Vendido</h2>
+            <a class="productos__destacado--tipo">Capuchino</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ventas">
+        <div class="ventas__totales">
+          <div class="ventas__totales--grafico">
+            <canvas id="ventas__totales__grafico"></canvas>
+          </div>
+        </div>
+
+        <div class="ventas__pago">
+          <div class="ventas__pago--grafico">
+            <canvas id="ventas__pago__grafico"></canvas>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <nav class="nav nav--footer">
+          <a href="#" class="nav__items nav__items--footer">Inicio</a>
+          <a href="#" class="nav__items nav__items--footer">Sobre nosotros</a>
+          <a href="#" class="nav__items nav__items--footer">Tienda</a>
+          <a href="#" class="nav__items nav__items--footer">Ubicación</a>
+        </nav>
+
+        <section class="footer__contact">
+          <h3 class="footer__title">Contactanos</h3>
+          <div class="footer__icons">
+            <span class="footer__container-icons">
+              <a class="fab fa-youtube footer__icon" href="#"></a>
+            </span>
+
+            <span class="footer__container-icons">
+              <a class="fab fa-instagram footer__icon" href="#"></a>
+            </span>
+
+            <span class="footer__container-icons">
+              <a class="fab fa-whatsapp footer__icon" href="#"></a>
+            </span>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="/src/js/graficas.js"></script>
+  </body>
+</html>
