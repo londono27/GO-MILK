@@ -45,23 +45,23 @@ body {
 .header .container {
   padding: 0;
 }
-.nav-{
+.nav- {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.logo{
+.logo {
   font-size: 40px;
   color: white;
   margin: 0;
 }
-.logo__nombre{
+.logo__nombre {
   font-weight: 400;
   margin-bottom: 20px;
 }
-.logo__bold{
+.logo__bold {
   font-weight: 700;
 }
 
@@ -590,7 +590,7 @@ svg {
 }
 .producto {
   padding: 15px;
-  background-color: chocolate;
+  background-color: rgba(102, 47, 7, 0.932);
   font-size: 20px;
   width: 80%;
   margin: 0 auto;
@@ -620,12 +620,12 @@ svg {
 }
 
 /* sub total */
-.total{
+.total {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.total_pago{
+.total_pago {
   font-family: var(--fuenteHeading);
   padding: 1rem 3rem;
   text-align: center;
@@ -635,10 +635,8 @@ svg {
   background-color: #3b1e08;
   border-radius: 10px;
   display: inline-block;
-  
 }
-.boton{
-
+.boton {
   font-family: var(--fuenteHeading);
   color: white;
   text-align: center;
@@ -647,4 +645,34 @@ svg {
   margin-bottom: 2rem;
   background-color: #3b1e08;
   border-radius: 10px;
+}
+
+/* FORMULARIO */
+
+legend {
+  font-size: 2rem;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight:bold;
+  text-transform: uppercase;
+  display: block;
+}
+fieldset{
+  margin-bottom: 1rem;
+  width: 60%;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 95%;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
