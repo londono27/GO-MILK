@@ -491,6 +491,18 @@ body {
     margin-top: 20px;
   }
 
+  .nav-{
+    flex-direction: column;
+  }
+ 
+  .logo__nombre{
+    text-align: center;
+  }
+
+  .header__cta{
+    width: 80%;
+    text-align: center;
+  }
   .nav__items {
     padding: 5px;
     border: 0;
@@ -578,6 +590,26 @@ body {
   .ventas__pago--grafico {
     height: 35vh;
     width: 55vw;
+  }
+
+
+  .header__texts{
+    margin-top: 0;
+  }
+
+  .formulario500{
+    width: 93%;
+  }
+
+  .input500{
+    
+  }
+
+  .grid500{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-bottom: 20px;
   }
 }
 /* Productos  */
@@ -675,4 +707,18 @@ select {
   border: 1px solid grey;
   border-radius: 1rem;
   margin-bottom: 1rem;
+}
+
+/*FORMULARIO PAGO*/
+
+.total_medio-pago{
+  display: flex;
+}
+
+.width{
+  width: 97%;
+}
+
+.tarjeta{
+  margin-left: 5px;
 }

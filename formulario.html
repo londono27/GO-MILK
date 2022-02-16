@@ -55,20 +55,44 @@
     </header>
 
     <main class="container contenido">
+        <section class="resumen">
+            <h1>
+            Resumen de productos
+            </h1>
+         </section>
 
         <form method="POST" class="formulario" novalidate>
-            <fieldset class="formulario500">
-                <legend>Usuario y contraseña</legend>
+            <fieldset class="width formulario500">
+                <legend>Datos de Comprador</legend>
 
-                <label>Usuario</label>
-                <input type="text" name="user" placeholder="usuario" id="user" class="input500">
+                <label>Nombres</label>
+                <input type="text" name="nombre" placeholder="Nombres" id="name">
 
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="contraseña" id="password" class="input500">
+                <label>Apellidos</label>
+                <input type="text" name="apellido" placeholder="Apellidos" id="lastname">
+                
+                <label>Dirección</label>
+                <input type="text" name="dirección" placeholder="Dirección" id="adress">
+
+                <label>Celular</label>
+                <input type="tel" name="celular" placeholder="Celular" id="phone">
+
+                <label>E-mail</label>
+                <input type="email" name="e-mail" placeholder="E-mail" id="email">
+
+                <label>Comentarios</label>
+                <textarea name="comentarios" id="comments" cols="30" rows="10" class="input-text"></textarea>
+                
             </fieldset>
         
-            <input type="submit" value="Iniciar Sesión" class="boton">
-
+            <section class="total">
+                <div class="total_medio-pago">
+                    <a href="#" class="boton boton--primario">Efectivo</a>
+                    <a href="#" class="boton boton--primario tarjeta">Tarjeta</a>
+                </div>
+                <div class="total_pago">TOTAL: $8</div>
+                <a href="entrada.html" class="boton boton--primario">IR AL PAGO</a>
+            </section>
         </form>
 
     </main>
