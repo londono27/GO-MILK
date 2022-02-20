@@ -2,11 +2,17 @@ let productos__vendidos__grafico = document.getElementById("productos__vendidos_
 var chart = new Chart(productos__vendidos__grafico, {
     type: "bar",
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Cortado', 'Ristretto', 'Macchiato', 'Coretto', 'Con Panna', 'Romano','Mead Raf', 'Marocchino', 'Mocha', 'Breve', 'Raf Coffe', 'Chocolate Milk'],
         datasets: [{
             label: 'Ventas para cada Café',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
             backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
@@ -15,6 +21,12 @@ var chart = new Chart(productos__vendidos__grafico, {
                 'rgba(255, 159, 64, 1)'
             ],
             borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
@@ -40,17 +52,11 @@ let ventas__totales__grafico = document.getElementById("ventas__totales__grafico
 var chart = new Chart(ventas__totales__grafico, {
     type: "line",
     data: {
-        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        labels: ['Bogotá', 'Barranquilla', 'Medellín', 'Tunja', 'Sogamoso', 'Cali'],
         datasets: [{
-            label: 'Ventas Mensuales',
-            data: [12, 19, 3, 5, 2, 3, 4, 8, 4, 6, 18, 20],
+            label: 'Ventas Ciudad',
+            data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
@@ -59,12 +65,6 @@ var chart = new Chart(ventas__totales__grafico, {
                 'rgba(255, 159, 64, 1)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
