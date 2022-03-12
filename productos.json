@@ -1,0 +1,74 @@
+[
+    {
+      "precio": 2.5,
+      "id": 1,
+      "title": "Cortado",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 8.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 2,
+      "title": "Expresso",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 9.svg"
+    },
+    {
+      "precio": 3,
+      "id": 3,
+      "title": "Macchiato",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 10.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 4,
+      "title": "Coretto",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 11.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 5,
+      "title": "Con panna",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 12.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 6,
+      "title": "Romano",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 13.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 7,
+      "title": "Mead raf",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 14.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 8,
+      "title": "Marocchino",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 15.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 9,
+      "title": "Mocha",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 16.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 10,
+      "title": "Breve",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 17.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 11,
+      "title": "Raf coffe",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 18.svg"
+    },
+    {
+      "precio": 2.5,
+      "id": 12,
+      "title": "Chocolate Milk",
+      "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 19.svg"
+    }
+  ]

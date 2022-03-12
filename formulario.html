@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dasboard de ventas</title>
+    <link rel="stylesheet" href="/src/css/normalize.css" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/09ac4333eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre">
+              GO&<span class="logo__bold">Milk</span>
+            </h1>
+          </a>
+          <nav class="nav">
+            <a href="login.html" class="nav__items nav__items--cta"
+              >Administrador</a
+            >
+            <a href="index.html" class="nav__items">Tienda</a>
+            <a href="#" class="nav__items">Información</a>
+          </nav>
+        </div>
+        <section class="header__container">
+          <div class="header__texts">
+            <h1 class="header__title">
+              Bienvenido a nuestra tienda de Café virtual
+            </h1>
+            <h2 class="header__subtitle">
+              El mejor café gurmet de la ciudad directo a tu casa
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div class="header__wave" style="overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #ffefd5"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <main class="container contenido">
+      <section class="resumen">
+        <h1>Resumen de productos</h1>
+        <div class="">
+          <h4>Carrito de compras</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acción</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer">
+                <th scope="row" colspan="5">
+                  Carrito vacío - comience a comprar!
+                </th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <template id="template-footer">
+          <th scope="row" colspan="2">Total productos:</th>
+          <td>10</td>
+          <td>
+            <button class="boton botonvaciar" id="vaciar-carrito">
+              vaciar todo
+            </button>
+          </td>
+          <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+
+        <template id="template-carrito">
+          <tr>
+            <th scope="row">id</th>
+            <td><img class="img-item" /></td>
+            <td></td>
+            <td>
+              <button class="boton btn-info btn-sm botonsum">+</button>
+              <button class="boton btn-danger btn-sm botonres">-</button>
+            </td>
+            <td>$ <span>500</span></td>
+          </tr>
+        </template>
+      </section>
+
+      <form method="POST" class="formulario" novalidate>
+        <fieldset class="width">
+          <legend>Datos de Comprador</legend>
+
+          <label>Nombres</label>
+          <input type="text" name="nombre" placeholder="Nombres" id="name" />
+
+          <label>Apellidos</label>
+          <input
+            type="text"
+            name="apellido"
+            placeholder="Apellidos"
+            id="lastname"
+          />
+
+          <label>Ciudad</label>
+          <select class="ciudad" name="Ciudad" placeholder="Ciudad" id="city">
+            <option>Bogotá</option>
+            <option>Barranquilla</option>
+            <option>Medellín</option>
+            <option>Tunja</option>
+            <option>Sogamoso</option>
+            <option>Cali</option>
+          </select>
+
+          <label>Dirección</label>
+          <input
+            type="text"
+            name="dirección"
+            placeholder="Dirección"
+            id="adress"
+          />
+
+          <label>Celular</label>
+          <input type="tel" name="celular" placeholder="Celular" id="phone" />
+
+          <label>E-mail</label>
+          <input type="email" name="e-mail" placeholder="E-mail" id="email" />
+
+          <label>Comentarios</label>
+          <textarea
+            name="comentarios"
+            id="comments"
+            cols="30"
+            rows="10"
+            class="input-text"
+          ></textarea>
+        </fieldset>
+
+        <section class="total">
+          <div class="total_medio-pago">
+            <button type="button" class="boton boton--primario">Efectivo</button>
+            <button type="button" class="boton boton--primario tarjeta">Tarjeta</button>
+          </div>
+          <div class="total_pago">TOTAL: $8</div>
+          <button class="boton boton--primario">IR AL PAGO</button>
+        </section>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <nav class="nav nav--footer">
+          <a href="#" class="nav__items nav__items--footer">Inicio</a>
+          <a href="#" class="nav__items nav__items--footer">Sobre nosotros</a>
+          <a href="#" class="nav__items nav__items--footer">Tienda</a>
+          <a href="#" class="nav__items nav__items--footer">Ubicación</a>
+        </nav>
+
+        <section class="footer__contact">
+          <h3 class="footer__title">Contactanos</h3>
+          <div class="footer__icons">
+            <span class="footer__container-icons">
+              <a class="fab fa-youtube footer__icon" href="#"></a>
+            </span>
+
+            <span class="footer__container-icons">
+              <a class="fab fa-instagram footer__icon" href="#"></a>
+            </span>
+
+            <span class="footer__container-icons">
+              <a class="fab fa-whatsapp footer__icon" href="#"></a>
+            </span>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="/src/js/resumen.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -28,15 +28,21 @@
             </h1>
           </a>
           <nav class="nav">
-            <a href="#" class="nav__items nav__items--cta">Administrador</a>
+            <a href="login.html" class="nav__items nav__items--cta"
+              >Administrador</a
+            >
             <a href="#" class="nav__items">Tienda</a>
             <a href="#" class="nav__items">Información</a>
           </nav>
         </div>
         <section class="header__container">
           <div class="header__texts">
-            <h1 class="header__title">Bienvenido a nuestra tienda de Café virtual</h1>
-            <h2 class="header__subtitle">El mejor café gurmet de la ciudad directo a tu casa</h2>
+            <h1 class="header__title">
+              Bienvenido a nuestra tienda de Café virtual
+            </h1>
+            <h2 class="header__subtitle">
+              El mejor café gurmet de la ciudad directo a tu casa
+            </h2>
           </div>
         </section>
       </div>
@@ -55,22 +61,23 @@
     </header>
 
     <main class="container contenido">
+      <h1>Selección de CAFÉ</h1>
 
-        <form method="POST" class="formulario" novalidate>
-            <fieldset class="width-login">
-                <legend>Usuario y contraseña</legend>
-
-                <label>Usuario</label>
-                <input type="text" name="user" placeholder="usuario" id="user" class="input500">
-
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="contraseña" id="password" class="input500">
-            </fieldset>
-            <a href="admin.html">
-              <input type="submit" value="Iniciar Sesión" class="boton">
-            </a>
-        </form>
-
+      <div class="grid" id="productos"></div>
+      <template id="template-card">
+        <div class="cuerpo-produto">
+          <button class="btn-producto"">
+            <img class="img-pro"/>
+            <div class="Producto__informacion">
+              <h3 class="producto__nombre"></h3>
+              <p class="prodcuto__precio"></p>
+            </div>
+          </button>
+        </div>
+      </template>
+      <section class="total">
+        <a href="formulario.html" class="boton boton--primario">IR AL PAGO</a>
+      </section>
     </main>
 
     <footer class="footer">
@@ -102,5 +109,7 @@
     </footer>
 
     <script src="/src/js/graficas.js"></script>
+    <script src="/src/js/productos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

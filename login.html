@@ -28,15 +28,19 @@
             </h1>
           </a>
           <nav class="nav">
-            <a href="admin.html" class="nav__items nav__items--cta">Administrador</a>
-            <a href="index.html" class="nav__items">Tienda</a>
+            <a href="#" class="nav__items nav__items--cta">Administrador</a>
+            <a href="#" class="nav__items">Tienda</a>
             <a href="#" class="nav__items">Información</a>
           </nav>
         </div>
         <section class="header__container">
           <div class="header__texts">
-            <h1 class="header__title">Bienvenido a nuestra tienda de Café virtual</h1>
-            <h2 class="header__subtitle">El mejor café gurmet de la ciudad directo a tu casa</h2>
+            <h1 class="header__title">
+              Bienvenido a nuestra tienda de Café virtual
+            </h1>
+            <h2 class="header__subtitle">
+              El mejor café gurmet de la ciudad directo a tu casa
+            </h2>
           </div>
         </section>
       </div>
@@ -55,56 +59,30 @@
     </header>
 
     <main class="container contenido">
-        <section class="resumen">
-            <h1>
-            Resumen de productos
-            </h1>
-         </section>
+      <form method="POST" class="formulario" novalidate>
+        <fieldset class="width-login">
+          <legend>Usuario y contraseña</legend>
 
-        <form method="POST" class="formulario" novalidate>
-            <fieldset class="width">
-                <legend>Datos de Comprador</legend>
+          <label>Usuario</label>
+          <input
+            type="text"
+            name="user"
+            placeholder="usuario"
+            id="user"
+            class="input500"
+          />
 
-                <label>Nombres</label>
-                <input type="text" name="nombre" placeholder="Nombres" id="name">
-
-                <label>Apellidos</label>
-                <input type="text" name="apellido" placeholder="Apellidos" id="lastname">
-
-                <label>Ciudad</label>
-                <select class="ciudad" name="Ciudad" placeholder="Ciudad" id="city">
-                  <option>Bogotá</option>
-                  <option>Barranquilla</option>
-                  <option>Medellín</option>
-                  <option>Tunja</option>
-                  <option>Sogamoso</option>
-                  <option>Cali</option>
-                </select>
-                
-                <label>Dirección</label>
-                <input type="text" name="dirección" placeholder="Dirección" id="adress">
-
-                <label>Celular</label>
-                <input type="tel" name="celular" placeholder="Celular" id="phone">
-
-                <label>E-mail</label>
-                <input type="email" name="e-mail" placeholder="E-mail" id="email">
-
-                <label>Comentarios</label>
-                <textarea name="comentarios" id="comments" cols="30" rows="10" class="input-text"></textarea>
-                
-            </fieldset>
-        
-            <section class="total">
-                <div class="total_medio-pago">
-                    <a href="#" class="boton boton--primario">Efectivo</a>
-                    <a href="#" class="boton boton--primario tarjeta">Tarjeta</a>
-                </div>
-                <div class="total_pago">TOTAL: $8</div>
-                <a href="entrada.html" class="boton boton--primario">IR AL PAGO</a>
-            </section>
-        </form>
-
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="contraseña"
+            id="password"
+            class="input500"
+          />
+        </fieldset>
+        <a href="admin.html" class="boton section">Iniciar Sesión </a>
+      </form>
     </main>
 
     <footer class="footer">
@@ -136,5 +114,6 @@
     </footer>
 
     <script src="/src/js/graficas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
