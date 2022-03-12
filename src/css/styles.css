@@ -36,7 +36,7 @@ body {
 
 .header {
   height: 55vh;
-  background-image: url("/src/img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   /*Escala la imagen al mayor tamaño posible sin estirarla*/
   background-size: cover;

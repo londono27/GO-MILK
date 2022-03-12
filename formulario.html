@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dasboard de ventas</title>
-    <link rel="stylesheet" href="/src/css/normalize.css" />
-    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <script
       src="https://kit.fontawesome.com/09ac4333eb.js"
       crossorigin="anonymous"
@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <form action="src/php/formulario.php" method="POST"></form>
     <header class="header">
       <div class="container">
         <div class="nav-">
@@ -112,12 +113,12 @@
         </template>
       </section>
 
-      <form method="POST" class="formulario" novalidate>
+      <form method="POST" class="formulario">
         <fieldset class="width">
           <legend>Datos de Comprador</legend>
 
           <label>Nombres</label>
-          <input type="text" name="nombre" placeholder="Nombres" id="name" />
+          <input type="text" name="nombre" placeholder="Nombres" id="name" required/>
 
           <label>Apellidos</label>
           <input
@@ -125,10 +126,11 @@
             name="apellido"
             placeholder="Apellidos"
             id="lastname"
+            required
           />
 
           <label>Ciudad</label>
-          <select class="ciudad" name="Ciudad" placeholder="Ciudad" id="city">
+          <select class="ciudad" name="ciudad" placeholder="Ciudad" id="city" required>
             <option>Bogotá</option>
             <option>Barranquilla</option>
             <option>Medellín</option>
@@ -137,7 +139,7 @@
             <option>Cali</option>
           </select>
 
-          <label>Dirección</label>
+          <label>Dirección</label required>
           <input
             type="text"
             name="dirección"
@@ -146,10 +148,10 @@
           />
 
           <label>Celular</label>
-          <input type="tel" name="celular" placeholder="Celular" id="phone" />
+          <input type="tel" name="celular" placeholder="Celular" id="phone" required/>
 
           <label>E-mail</label>
-          <input type="email" name="e-mail" placeholder="E-mail" id="email" />
+          <input type="email" name="e-mail" placeholder="E-mail" id="email" required/>
 
           <label>Comentarios</label>
           <textarea
@@ -167,7 +169,8 @@
             <button type="button" class="boton boton--primario tarjeta">Tarjeta</button>
           </div>
           <div class="total_pago">TOTAL: $8</div>
-          <button class="boton boton--primario">IR AL PAGO</button>
+          <!-- <input class="boton boton--primario" type="submit" value="IR AL PAGO" name="enviar"> -->
+          <button class="boton boton--primario" type="submit" value="IR AL PAGO" name="enviar">IR AL PAGO</button>
         </section>
       </form>
     </main>
@@ -199,7 +202,7 @@
         </section>
       </div>
     </footer>
-    <script src="/src/js/resumen.js"></script>
+    <script src="src/js/resumen.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
