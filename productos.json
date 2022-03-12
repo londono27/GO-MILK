@@ -18,25 +18,25 @@
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 10.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 3.5,
       "id": 4,
       "title": "Coretto",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 11.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 4,
       "id": 5,
       "title": "Con panna",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 12.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 3.5,
       "id": 6,
       "title": "Romano",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 13.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 3,
       "id": 7,
       "title": "Mead raf",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 14.svg"
@@ -48,7 +48,7 @@
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 15.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 3.5,
       "id": 9,
       "title": "Mocha",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 16.svg"
@@ -60,13 +60,13 @@
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 17.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 3,
       "id": 11,
       "title": "Raf coffe",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 18.svg"
     },
     {
-      "precio": 2.5,
+      "precio": 4,
       "id": 12,
       "title": "Chocolate Milk",
       "thumbnailUrl": "/src/img/Seleccion de cafe/Recurso 19.svg"
